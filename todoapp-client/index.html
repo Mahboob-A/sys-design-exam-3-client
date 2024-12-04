@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="crud-section">
+      <h2>Todo Tasks</h2>
+      <div id="create-tasks">
+        <h3>Create Task</h3>
+        <input id="task-title" type="text" placeholder="Task Title" />
+        <textarea id="task-desc" placeholder="Task Description"></textarea>
+        <button onclick="createTask()">Create Task</button>
+      </div>
+      <br><br>
+      <div id="update-task">
+        <h3>Update Task</h3>
+        <input type="text" id="update-id" placeholder="Task ID" />
+        <input type="text" id="update-title" placeholder="New Title (optional)" />
+        <input type="text" id="update-desc" placeholder="New Description (optional)" />
+        <label>
+          <input type="checkbox" id="update-completed" />
+          Mark as Completed
+        </label>
+        <br>
+        <button onclick="updateTask()">Update Task</button>
+      </div>
+      <br><br>
+      <div id="delete-task">
+        <h3>Delete Task</h3>
+        <input id="delete-id" type="text" placeholder="Task ID to Delete" />
+        <button onclick="deleteTask()">Delete Task</button>
+      </div>
+      <br><br>
+    </div>
+    <div class="task-list">
+      <h2>Task List</h2>
+      <ul id="tasks"></ul>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+

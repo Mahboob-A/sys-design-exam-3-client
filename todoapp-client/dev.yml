@@ -1,0 +1,11 @@
+services:
+  frontend:
+    build: .
+    ports:
+      - "3000:80"
+    # networks:
+    #   - dev-todoapp-service-network
+
+# networks: 
+#   dev-todoapp-service-network:
+#     external: true 
