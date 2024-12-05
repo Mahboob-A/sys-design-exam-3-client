@@ -1,3 +1,5 @@
+
+// Replace Base URL with ALB DNS 
 const API_BASE = "http://127.0.0.1:9090/api/v1/app/task/";
 
 async function fetchTasks() {
@@ -65,6 +67,7 @@ function renderTasks(tasks) {
       <p><strong>ID:</strong> ${task.id}</p>
       <p><strong>Created At:</strong> ${createdAt}</p>
       <p><strong>Updated At:</strong> ${updatedAt}</p>
+      <p><strong>HOST:</strong> ${task.host}</p>
     `;
     tasksContainer.appendChild(taskItem);
   });
